@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "DeepTrackAI",
+  "version": "1.0",
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+
+  "permissions": ["activeTab", "tabs", "storage", "scripting"],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["Readability-readerable.js", "Readability.js", "content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "host_permissions": ["<all_urls>"]
+}
