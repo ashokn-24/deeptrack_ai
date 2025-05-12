@@ -6,6 +6,10 @@
 
 ---
 
+## 📽️ Demo Video
+
+[Watch the demo on YouTube] https://youtu.be/C_PkE_sltCk
+
 ## ⚙️ Installation
 
 1. **Extension:**
